@@ -9,7 +9,6 @@
     cursor: pointer;
 }
 .btn:hover{
-    padding: 8px 20px;
     transition: all 0.3s ease-out;
     background: #fff;
     color: black;
@@ -17,7 +16,8 @@
 }
 
 .btn--primary{
-    background-color: var(--primary);
+    background: rgb(56,128,231);
+    background: linear-gradient(90deg, rgba(56,128,231,1) 0%, rgba(82,181,222,1) 100%);
 }
 .btn--outline{
     background-color: transparent;
