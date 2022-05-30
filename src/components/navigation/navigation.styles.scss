@@ -5,6 +5,7 @@
   align-items: center;
   color: white;
   height: 80px;
+
 }
 
 .nav-menu {
@@ -42,6 +43,9 @@
 @media screen and (max-width: 960px) {
   .navbar-items {
     position: relative;
+    Button {
+    display: none;
+  }
   }
 
   .nav-menu {
@@ -106,7 +110,7 @@
     border-radius: 4px;
     width: 80%;
     background: rgb(56, 128, 231);
-    background: linear-gradient(90deg, rgba(56, 128, 231, 1) 0%, rgba(82, 181, 222, 1) 100%);
+    background: linear-gradient(90deg, #3880e7 0%, #52b5de 100%);
     text-decoration: none;
     color: #fff;
     font-size: 1.5rem;
@@ -118,7 +122,5 @@
     transition: 250ms;
   }
 
-  Button {
-    display: none;
-  }
+  
 }

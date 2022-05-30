@@ -1,0 +1,16 @@
+.testimonial {
+    .testimonial-content {
+        q {
+            display: inline-block;
+            margin: 0 auto;
+            width: 30%;
+        }
+    }
+
+    img{
+        border-radius: 100%;
+        object-fit: cover;
+        width: 70px;
+        height: 70px;
+    }
+}
