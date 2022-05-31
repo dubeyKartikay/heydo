@@ -10,10 +10,11 @@ export default function Feature({ feature, index }) {
   }
   return (
     <div className="feature">
-      {
-        FeatureElements.map((ele) => ele)
-
-      }
+      <img className={feature.cssClasses} src={feature.icon} alt="" />
+      <div className="feature-text">
+        <h2>{feature.heading}</h2>
+        <p>{feature.subText}</p>
+      </div>
     </div>
-  )
+      )
 }

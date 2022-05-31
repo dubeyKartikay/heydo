@@ -1,13 +1,20 @@
 .testimonial {
+    display: block;
+    padding: 3rem 0;;
+    position: absolute;
     .testimonial-content {
         q {
             display: inline-block;
-            margin: 0 auto;
             width: 30%;
         }
     }
-
+    .image{
+        display: inline-block;
+        position: relative;
+        left: 10%;
+    }
     img{
+        display: inline;
         border-radius: 100%;
         object-fit: cover;
         width: 70px;

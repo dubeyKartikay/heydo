@@ -1,38 +1,24 @@
-import RupeeIcon from '../../Assets/features1.jpg'
-
+import RupeeIcon from '../../Assets/rupee-indian.png'
+import GrowthIcon from '../../Assets/seeding.png'
+import customerCareIcon from'../../Assets/customer-service.png'
 export const FeaturesList = [
     {
         icon: RupeeIcon,
         heading: "Cost Effective",
-        subText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Di\
-        tinctio ducimus repellat ad expedita dolore enim voluptates ratione sit autem\
-         debitis a rerum soluta modi, eos facilis fugiat, sunt deserunt mollitia! Nemo voluptates\
-          voluptatum assumenda nostrum debitis iure doloremque illum tempora fuga, corporis facilis,\
-           autem sed incidunt nihil asperiores consectetur obcaecati repellat omnis. Fugit explicabo \
-           necessitatibus soluta aperiam veritatis! Quisquam, doloremque. Aperiam dolore animi quos saepe non.\
-            Voluptatem omnis aliquam perferendis nulla corporis aspernatur facilis accusamus consequuntur voluptatibus\
-             iusto nisi saepe eius, quia suscipit, praesentium, tempore culpa cum non consequatur nesciunt!\
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Di\
-        tinctio ducimus repellat ad expedita dolore enim voluptates ratione sit autem\
-         debitis a rerum soluta modi, eos facilis fugiat, sunt deserunt mollitia! Nemo voluptates\
-          voluptatum assumenda nostrum debitis iure doloremque illum tempora fuga, corporis facilis,\
-           autem sed incidunt nihil asperiores consectetur obcaecati repellat omnis. Fugit explicabo \
-           necessitatibus soluta aperiam veritatis! Quisquam, doloremque. Aperiam dolore animi quos saepe non.\
-            Voluptatem omnis aliquam perferendis nulla corporis aspernatur facilis accusamus consequuntur voluptatibus\
-             iusto nisi saepe eius, quia suscipit, praesentium, tempore culpa cum non consequatur nesciunt!',
-        cssClasses: ''
+        subText: 'Lorem ipsum dolor sit amet consecteurn',
+        cssClasses: 'invert-colors'
     },
     {
-        icon: RupeeIcon,
-        heading: "Cost Effective",
-        subText: "Lorem ipsum dolor sit, amet consectetur adipisicing.",
-        cssClasses: ''
+        icon: GrowthIcon,
+        heading: "Grow your Bussiness",
+        subText: "Dignissimos accusantium velit ipsam aperiam",
+        cssClasses: 'invert-colors'
     },
     {
-        icon: RupeeIcon,
-        heading: "Cost Effective",
-        subText: "Lorem ipsum dolor sit, amet consectetur adipisicing.",
-        cssClasses: ''
+        icon: customerCareIcon,
+        heading: "Amazing Custiomer Care",
+        subText: "quae eveniet ullam at ab iste atque ",
+        cssClasses: 'invert-colors'
     }
 ]
 

@@ -4,7 +4,14 @@
     }
     .features-container {
         display: flex;
-        justify-content: center;
-        flex-direction: column;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 960px){
+    .features-section{
+        .features-container{
+            flex-direction: column;
+        }
     }
 }

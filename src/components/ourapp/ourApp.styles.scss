@@ -1,0 +1,35 @@
+.our-app{
+    h1{
+        font-size: 50px;
+    }
+    padding: 3rem 0;
+    .flex-container{
+        padding: 3rem 0;
+        p{
+            display: inline-block;
+            width: 40%;
+            
+        }
+        video{
+            width: 40%;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 960px){
+    .our-app{
+        .flex-container{
+            padding: 3rem 1rem ;
+            flex-direction: column;
+            justify-content: center;
+            p{
+                width: auto;
+            }
+            video{
+                width: auto;
+            }
+        }
+    }
+}
