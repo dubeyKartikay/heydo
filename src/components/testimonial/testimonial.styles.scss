@@ -5,13 +5,16 @@
     .testimonial-content {
         q {
             display: inline-block;
-            width: 30%;
+            width: 50%;
+            @media screen and (max-width: 960px){
+                width: 80%;
+            }
         }
     }
     .image{
         display: inline-block;
         position: relative;
-        left: 10%;
+        left: 20%;
     }
     img{
         display: inline;
@@ -20,4 +23,6 @@
         width: 70px;
         height: 70px;
     }
+
+    
 }

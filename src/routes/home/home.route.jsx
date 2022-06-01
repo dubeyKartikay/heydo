@@ -4,7 +4,7 @@ import Logo from "../../Assets/logo.jpeg"
 import './home.styles.scss'
 import { Button } from "../../components/button/button.component";
 import Features from "../../components/features/features.component";
-import Testimonials from "../../components/testimonial/testimonial.component";
+import Testimonials from "../../components/testimonials/testimonials.component";
 import Ourapp from "../../components/ourapp/ourApp.route";
 import Carousel from "../../components/carousel-swiper/carousel.component";
 const Home = () => {
@@ -19,8 +19,8 @@ const Home = () => {
                 <Button buttonSize="btn--large" >Contact Us</Button>
                 <Ourapp/>
                 <Features />
-                <Testimonials />
-                <Carousel/>
+                <Testimonials/>
+                {/* <Carousel/> */}
             </div>
 
         </Fragment>
