@@ -1,13 +1,19 @@
 .navbar-items {
+  position: fixed;
+  z-index: 2;
   background: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   height: 80px;
+  width: 100%;
 
 }
-
+.navbar-logo{
+  margin-top: 40px;
+  width: 200px;
+}
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(5, auto);
@@ -80,10 +86,9 @@
   }
 
   .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 
   }
 

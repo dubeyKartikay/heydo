@@ -3,6 +3,7 @@ import { MenuItems } from './menu-items'
 import "./navigation.styles.scss"
 import { Button } from '../button/button.component';
 import { Outlet } from 'react-router';
+import Logo from '../../Assets/transparent.svg'
 export default class Navigation extends Component {
     state = { clicked: false };
     handleClick = () => {
@@ -11,8 +12,8 @@ export default class Navigation extends Component {
     render() {
         return (
             <Fragment>
-                <nav className='navbar-items'>
-                    <h1 className="navbar-logo">Heydo <i className='fab fa-react'></i></h1>
+                <div className='navbar-items'>
+                    <img className='navbar-logo' src= {Logo} alt="" />
                     <div className="menu-icon" onClick={this.handleClick}>
                         <i className={this.state.clicked ? "fas fa-times" : "fas fa-bars"} ></i>
                     </div>
@@ -26,7 +27,7 @@ export default class Navigation extends Component {
                         })}
                     </ul>
                     <Button buttonStyle="btn--outline" >Sign Up</Button>
-                </nav>
+                </div>
                 <Outlet/>
             </Fragment>
         )

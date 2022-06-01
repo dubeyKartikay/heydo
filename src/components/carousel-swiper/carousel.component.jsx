@@ -28,7 +28,7 @@ export default function Carousel({slidesArr}) {
       >
         {
           slidesArr.map(
-            (ele)=> <SwiperSlide>{ele}</SwiperSlide>
+            (ele,index)=> <SwiperSlide key={index} >{ele}</SwiperSlide>
           )
         }
       </Swiper>
