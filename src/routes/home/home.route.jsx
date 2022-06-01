@@ -6,7 +6,7 @@ import { Button } from "../../components/button/button.component";
 import Features from "../../components/features/features.component";
 import Testimonials from "../../components/testimonials/testimonials.component";
 import Ourapp from "../../components/ourapp/ourApp.route";
-import Carousel from "../../components/carousel-swiper/carousel.component";
+import ContactUs from "../../components/contactUs/contactUs.component";
 const Home = () => {
     return (
         <Fragment>
@@ -20,7 +20,7 @@ const Home = () => {
                 <Ourapp/>
                 <Features />
                 <Testimonials/>
-                {/* <Carousel/> */}
+                <ContactUs/>
             </div>
 
         </Fragment>
