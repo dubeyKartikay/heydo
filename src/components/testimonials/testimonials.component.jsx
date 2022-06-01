@@ -9,7 +9,7 @@ export default function Testimonials() {
     testimonialArr.push(<Testimonial testimonialData={data} />)
   });
   return (
-    <div className="testimonial-section">
+    <div id="testimonial-section">
       <h1 className='heading'>Testimonials</h1>
       <Carousel slidesArr={testimonialArr} />
     </div>)

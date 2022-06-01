@@ -3,7 +3,7 @@ import "./contactUs.styles.scss"
 export default function ContactUs() {
   return (
     <>
-      <div className="contact-us-section">
+      <div id="contact-us-section">
         <h1 className='heading'>Contact Us</h1>
         <form className='contact-me-form' action="">
           <div className="form-input">

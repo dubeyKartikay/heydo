@@ -3,7 +3,7 @@ import video from "../../Assets/mov_bbb.mp4"
 import "./ourApp.styles.scss"
 export default function Ourapp() {
     return (
-        <div className='our-app'>
+        <div id='our-app'>
             <h1 className='heading' >Our Application</h1>
             <div className="flex-container">
                 <div className="para">

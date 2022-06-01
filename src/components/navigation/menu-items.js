@@ -5,11 +5,6 @@ export const MenuItems = [
         cName : 'nav-links'
     },
     {
-        title:'Pricing',
-        url:'#',
-        cName : 'nav-links'
-    },
-    {
         title:'Contact Us',
         url:'#',
         cName : 'nav-links'
