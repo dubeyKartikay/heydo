@@ -5,10 +5,11 @@ export default function ContactUs() {
     <>
       <div id="contact-us-section">
         <h1 className='heading'>Contact Us</h1>
-        <form className='contact-me-form' action="">
+        <form action="https://formspree.io/f/xknyyawr"
+          method="POST" className='contact-me-form'>
           <div className="form-input">
             <label htmlFor="name">Name</label><br />
-            <input type="text" id='name' name='name' placeholder='John' /><br />
+            <input type="text" id='name' name='name' placeholder='John Doe' /><br />
           </div>
           <div className="form-input">
             <label htmlFor="email">Email</label><br />

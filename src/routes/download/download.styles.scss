@@ -1,0 +1,35 @@
+#download-page{
+
+   height: 80vh;
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding-top: 80px;
+   div{
+    text-align: left;
+   }
+  img{
+    width: 400px;
+    filter: grayscale(100%);
+  }
+  h1{
+    text-align: left;
+    font-size: 50px;
+    span{
+        font-size: 90px;
+        background: -webkit-linear-gradient(0deg, #427dd5 0%, #64d8d7 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+    }
+  }
+  Button{
+    
+    margin: 3rem 0;
+
+  }
+  p{
+    color: #bbbbbb;
+  }
+}

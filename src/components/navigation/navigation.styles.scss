@@ -1,7 +1,7 @@
 .navbar-items {
   position: fixed;
   z-index: 2;
-  background: rgb(0, 0, 0);
+  background: #0e0e0e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,8 +11,8 @@
 
 }
 .navbar-logo{
-  margin-top: 40px;
-  width: 200px;
+  // margin-top: 40px;
+  width: 150px;
 }
 .nav-menu {
   display: grid;
@@ -48,7 +48,9 @@
 
 @media screen and (max-width: 960px) {
   .navbar-items {
-    position: relative;
+    position: fixed;
+  z-index: 2;
+    // position: relative;
     Button {
     display: none;
   }
@@ -66,7 +68,7 @@
   }
 
   .nav-menu.active {
-    background: black;
+    background: #0e0e0e;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;

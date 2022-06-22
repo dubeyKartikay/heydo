@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { Fragment } from "react";
-import Logo from "../../Assets/logo2.png"
+import Logo from "../../Assets/getgif.gif"
 import './home.styles.scss'
 import { Button } from "../../components/button/button.component";
 import Features from "../../components/features/features.component";
@@ -10,7 +10,7 @@ import ContactUs from "../../components/contactUs/contactUs.component";
 import Typewriter from "typewriter-effect";
 const Home = () => {
     return (
-        <Fragment>
+        <div id="Home">
             <div className='home-page'>
                 <div className="landing-page">
                     <div className="heading-cta">
@@ -36,11 +36,11 @@ const Home = () => {
                 </div>
                 <Ourapp />
                 <Features />
-                <Testimonials />
+                <Testimonials /> 
                 <ContactUs/>
             </div>
 
-        </Fragment>
+        </div>
     )
 }
 export default Home;
