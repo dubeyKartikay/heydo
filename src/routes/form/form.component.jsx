@@ -13,7 +13,7 @@ export default function Form() {
         const {motorNo,purchaseDate,model,salutation,fname,lname,email,addr1,addr2,addr3,tehsil,district,pincode,phoneNo,aadharNo,dob} = event.target;
        
         const data = {
-            "_id":uuidv4(),
+            "status":"pending",
             "dealerId":DealerID,
             "motorNo":motorNo.value,
             "purchaseDate" : purchaseDate.value,
