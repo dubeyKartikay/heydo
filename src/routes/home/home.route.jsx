@@ -28,7 +28,7 @@ const Home = () => {
                                 }
                             } />
                         </h1>
-                        <Button buttonSize="btn--large" ><a href="#contact-us-section">Contact Us</a></Button>
+                        <Button buttonSize="btn--large" ><a href="#contact-us-section">Book a demo</a></Button>
                     </div>
                     <div>
                         <img className="landing-page-logo" src={Logo} alt="" />

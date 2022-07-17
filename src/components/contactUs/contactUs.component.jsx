@@ -4,7 +4,7 @@ export default function ContactUs() {
   return (
     <>
       <div id="contact-us-section">
-        <h1 className='heading'>Contact Us</h1>
+        <h1 className='heading'>Book a Demo</h1>
         <form action="https://formspree.io/f/xknyyawr"
           method="POST" className='contact-me-form'>
           <div className="form-input">
