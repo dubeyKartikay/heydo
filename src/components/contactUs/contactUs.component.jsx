@@ -1,10 +1,10 @@
 import React from 'react'
 import "./contactUs.styles.scss"
-export default function ContactUs() {
+export default function ContactUs({text}) {
   return (
     <>
       <div id="contact-us-section">
-        <h1 className='heading'>Book a Demo</h1>
+        <h1 className='heading'>{text}</h1>
         <form action="https://formspree.io/f/xknyyawr"
           method="POST" className='contact-me-form'>
           <div className="form-input">

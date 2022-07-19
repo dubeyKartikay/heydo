@@ -37,7 +37,7 @@ const Home = () => {
                 <Ourapp />
                 <Features />
                 <Testimonials /> 
-                <ContactUs/>
+                <ContactUs text = "Book a demo"/>
             </div>
 
         </div>

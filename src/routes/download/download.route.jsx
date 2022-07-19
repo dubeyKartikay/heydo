@@ -16,7 +16,7 @@ export default function Download() {
             <Button buttonStyle='btn--primary' buttonSize='btn--large'>
                 Windows 64-bit
             </Button>
-            <p>Note: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, tenetur?</p>
+            {/* <p>Note: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, tenetur?</p> */}
         </div>
         <img src={downloadPageGIF} alt="" /> 
     </div>

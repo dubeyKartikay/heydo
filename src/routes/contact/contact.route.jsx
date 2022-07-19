@@ -4,7 +4,7 @@ import "./contact.styles.scss"
 export default function ContactPage() {
   return (
     <div id = "contact-page">
-        <ContactUs/>
+        <ContactUs text = "Contact Us"/>
     </div>
   )
 }
