@@ -19,7 +19,7 @@ export default function Ourapp() {
                     <video controls> <source src={video} type="video/mp4" /> </video>
                 </div>
                 <div>
-                    <img style={{"maxWidth":"50%",borderRadius:"20px"}} src={ourAppimg} alt="" />
+                    <img className='our-app-img' src={ourAppimg} alt="" />
                     <div className="para">
                         <h1>Application Flow</h1>
                         <p sty className='our-app-text'>

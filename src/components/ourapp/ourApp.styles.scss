@@ -10,9 +10,22 @@
     .flex-container{
         padding: 3rem 0;
         div{
+            .our-app-img{
+               max-width: 50%;
+               border-radius: 20px;
+               @media screen and (max-width:960px) {
+                   max-width: 100%;
+              
+            }
+            }
             padding: 3rem 0;
             display: flex;
             justify-content: center;
+            @media screen and (max-width:960px) {
+                flex-direction: column;
+                margin: 0 auto;
+                width: 100%;
+            }
         }
         .para{
             // position: absolute;
