@@ -4,6 +4,7 @@ import "./form.styles.scss"
 import axios from 'axios';
 import { Button } from '../../components/button/button.component';
 import { useState } from 'react';
+import { state_arr } from '../../utils/cities';
 export default function Form() {
     const FinanceDropdownList = ['AXIS BANK LTD.', 'BAJAJ FINSERV', 'BANK OF BARODA', 'BANK OF INDIA', 'CANARA BANK', 'CREDIT FAIR', 'HDFC BANK LTD', 'ICICI BANK LTD', 'IDFC FIRST BANK LTD.', 'I-LOAN CREDIT PVT LTD', 'INDUSIND BANK LTD', 'L&T FINANCE', 'LOAN TAP', 'MANNAPURAM FINANCE', 'OTHERS', 'OTTO CAPITAL', 'PAYTM', 'PINE LABS', 'PUNJAB NATIONAL BANK', 'SHRIRAM CITY UNION FINANCE LTD', 'TATA CAPITAL FINANCIAL SERVICE LIMITED', 'UNION BANK OF INDIA', 'WHEELS EMI', 'ZEST MONEY']
     const { userId: DealerID } = useParams();
@@ -29,36 +30,36 @@ export default function Form() {
         const data = {
             "status": "pending",
             "dealerId": DealerID,
-            "motorNo": motorNo ? motorNo.value : null,
-            "purchaseDate": purchaseDate ? purchaseDate.value : null,
-            "model": model ? model.value : null,
-            "salutation": salutation ? salutation.value : null,
-            "first_name": fname ? fname.value : null,
-            "last_name": lname ? lname.value : null,
-            "email_id": email ? email.value : null,
-            "add_first": addr1 ? addr1.value : null,
-            "add_second": addr2 ? addr2.value : null,
-            "add_third": addr3 ? addr3.value : null,
-            "tehsil": tehsil ? tehsil.value : null,
-            "district": district ? district.value : null,
-            "pincode": pincode ? pincode.value : null,
-            "mobile_no": phoneNo ? phoneNo.value: null,
-            "aadharNo": aadharNo ? aadharNo.value : null,
-            "date_of_birth": dob ? dob.value : null,
-            "financer": financer ? financer.value : null,
+            "motorNo": motorNo ? motorNo.value : "",
+            "purchaseDate": purchaseDate ? purchaseDate.value : "",
+            "model": model ? model.value : "",
+            "salutation": salutation ? salutation.value : "",
+            "first_name": fname ? fname.value : "",
+            "last_name": lname ? lname.value : "",
+            "email_id": email ? email.value : "",
+            "add_first": addr1 ? addr1.value : "",
+            "add_second": addr2 ? addr2.value : "",
+            "add_third": addr3 ? addr3.value : "",
+            "tehsil": tehsil ? tehsil.value : "",
+            "district": district ? district.value : "",
+            "pincode": pincode ? pincode.value : "",
+            "mobile_no": phoneNo ? phoneNo.value: "",
+            "aadharNo": aadharNo ? aadharNo.value : "",
+            "date_of_birth": dob ? dob.value : "",
+            "financer": financer ? financer.value : "",
             "inclusions": getInclusions(),
-            "nominee_name": nominee_name ?  nominee_name.value : null,
-            "Rsa Membership type":rsa_length ? rsa_length.value : null,
-            "relation_with_applicant": relation_with_applicant ? relation_with_applicant.value : null,
-            "nominee_date_of_birth": nominee_date_of_birth ? nominee_date_of_birth.value : null,
-            "nominee_age": nominee_age ? nominee_age.value: null,
+            "nominee_name": nominee_name ?  nominee_name.value : "",
+            "Rsa Membership type":rsa_length ? rsa_length.value : "",
+            "relation_with_applicant": relation_with_applicant ? relation_with_applicant.value : "",
+            "nominee_date_of_birth": nominee_date_of_birth ? nominee_date_of_birth.value : "",
+            "nominee_age": nominee_age ? nominee_age.value: "",
             "finance": document.getElementById("finance").checked ? "Y" : "N",
-            "gst_in": gst_in ? gst_in.value : null,
+            "gst_in": gst_in ? gst_in.value : "",
             "gst_check": document.getElementById("gst").checked ? "1" : "0",
-            "distric_code": district_code ? district_code.value : null,
-            "state_code": state_code ? state_code.value : null,
-            "state": state ? state.value : null,
-            "city": city ? city.value : null
+            "distric_code": district_code ? district_code.value : "",
+            "state_code": state_code ? state_code.value : "",
+            "state": state ? state.value : "",
+            "city": city ? city.value : ""
         }
         // console.log(data);
         alert("Wait....")
@@ -190,11 +191,22 @@ export default function Form() {
                         <br />
                     </div>}
 
-
+{/* 
                     <div className="inp-block">
                         <label className='required' htmlFor="state">State</label>
                         <br />
                         <input required type="text" name="state" id="state   " />
+                    </div>
+                     */}
+
+                    <div className="inp-block">
+                        <label className='required' htmlFor="state">State</label>
+                        <br />
+                        <select type="select" name="state" id="state">
+                            {
+                             state_arr.map( (ele)=><option value={ele}>{ele}</option> )
+                            }
+                        </select>
                     </div>
 
                     <div className="inp-block">
