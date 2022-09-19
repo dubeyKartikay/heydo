@@ -3,12 +3,13 @@ import { useParams } from 'react-router';
 import "./form.styles.scss"
 import axios from 'axios';
 import { Button } from '../../components/button/button.component';
-import { useState } from 'react';
-import { state_arr } from '../../utils/cities';
+import { useState,useRef } from 'react';
+import { state_arr,get_city_arr } from '../../utils/cities';
 export default function Form() {
     const FinanceDropdownList = ['AXIS BANK LTD.', 'BAJAJ FINSERV', 'BANK OF BARODA', 'BANK OF INDIA', 'CANARA BANK', 'CREDIT FAIR', 'HDFC BANK LTD', 'ICICI BANK LTD', 'IDFC FIRST BANK LTD.', 'I-LOAN CREDIT PVT LTD', 'INDUSIND BANK LTD', 'L&T FINANCE', 'LOAN TAP', 'MANNAPURAM FINANCE', 'OTHERS', 'OTTO CAPITAL', 'PAYTM', 'PINE LABS', 'PUNJAB NATIONAL BANK', 'SHRIRAM CITY UNION FINANCE LTD', 'TATA CAPITAL FINANCIAL SERVICE LIMITED', 'UNION BANK OF INDIA', 'WHEELS EMI', 'ZEST MONEY']
     const { userId: DealerID } = useParams();
     const [formState, setFormState] = useState([false, false, false, false])
+    const [currState ,setCurrState] = useState("Delhi");
     // console.log(formState);
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -184,12 +185,7 @@ export default function Form() {
                         <br />
                     </div>
 
-                    {formState[2] && <div className="inp-block">
-                        <label className='required' htmlFor="city">City</label>
-                        <br />
-                        <input required type="text" name="city" id="city" />
-                        <br />
-                    </div>}
+
 
 {/* 
                     <div className="inp-block">
@@ -202,12 +198,21 @@ export default function Form() {
                     <div className="inp-block">
                         <label className='required' htmlFor="state">State</label>
                         <br />
-                        <select type="select" name="state" id="state">
+                        <select onChange={(event)=>setCurrState(event.target.value)}  type="select" name="state" id="state">
                             {
                              state_arr.map( (ele)=><option value={ele}>{ele}</option> )
                             }
                         </select>
                     </div>
+
+                    {formState[2] && <div className="inp-block">
+                        <label className='required' htmlFor="city">City</label>
+                        <br />
+                        <select type="select" name="city" id="city">
+                             {get_city_arr(state_arr.indexOf(currState)+1).map( (ele)=><option value={ele}>{ele}</option> )}
+                        </select>
+                        <br />
+                    </div>}
 
                     <div className="inp-block">
                         <br />

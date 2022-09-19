@@ -53,17 +53,14 @@ export function get_state(state_id){
     return state_arr[state_id]
 }
  
-export function get_city(state_id, city_index){
+export function get_city_arr(state_id){
 	// var option_str = document.getElementById(city_id);
 	// option_str.length=0;	// Fixed by Julian Woods
 	// option_str.options[0] = new Option('Select City','');
 	// option_str.selectedIndex = 0;
 
 	var city_arr = s_a[state_id].split("|");
-    if (city_index >= city_arr.length) {
-        return null
-    }
-    return city_arr[city_index]
+    return city_arr
 	// for (var i=0; i<city_arr.length; i++) {
 	// 	option_str.options[option_str.length] = new Option(city_arr[i],city_arr[i]);
 	// }
