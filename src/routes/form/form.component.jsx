@@ -64,7 +64,7 @@ export default function Form() {
         }
         // console.log(data);
         alert("Wait....")
-        axios.post("https://heydo-tect-back.herokuapp.com/create", data).then((res) => { window.location.href = window.location.origin + "/success" }).catch(((err) => {
+        axios.post("https://heydo-backend.vercel.app/create", data).then((res) => { window.location.href = window.location.origin + "/success" }).catch(((err) => {
             alert("error occured please reload and fill the form again");
         }));
     }
